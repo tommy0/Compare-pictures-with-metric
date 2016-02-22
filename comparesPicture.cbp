@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="comparesPicture" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/comparesPicture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-g" />
+					<Add directory="D:/libs/include/boost-1_53" />
+					<Add directory="D:/GnuWin32/include/libpng12" />
+					<Add directory="D:/GnuWin32/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\GnuWin32\lib\libpng.dll.a" />
+					<Add library="D:\GnuWin32\lib\libpng.lib" />
+					<Add library="D:\GnuWin32\lib\libpng12.dll.a" />
+					<Add library="D:\GnuWin32\lib\libz.a" />
+					<Add library="D:\GnuWin32\lib\libz.dll.a" />
+					<Add library="D:\GnuWin32\lib\zlib.lib" />
+					<Add library="..\..\libs\lib\libboost_filesystem-mgw47-mt-1_53.a" />
+					<Add library="..\..\libs\lib\libboost_filesystem-mgw47-mt-d-1_53.a" />
+					<Add library="..\..\libs\lib\libboost_system-mgw47-mt-1_53.a" />
+					<Add library="..\..\libs\lib\libboost_system-mgw47-mt-d-1_53.a" />
+					<Add directory="D:/GnuWin32/lib" />
+					<Add directory="D:/libs/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/comparesPicture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="D:/GnuWin32/include" />
+			<Add directory="D:/GnuWin32/include/libpng12" />
+			<Add directory="D:/libs/include/boost-1_53" />
+		</Compiler>
+		<Linker>
+			<Add library="D:\GnuWin32\lib\libpng.dll.a" />
+			<Add library="D:\GnuWin32\lib\libpng.lib" />
+			<Add library="D:\GnuWin32\lib\libpng12.dll.a" />
+			<Add library="D:\GnuWin32\lib\libz.a" />
+			<Add library="D:\GnuWin32\lib\libz.dll.a" />
+			<Add library="D:\GnuWin32\lib\zlib.lib" />
+			<Add directory="D:/GnuWin32/lib" />
+			<Add directory="D:/libs/lib" />
+		</Linker>
+		<Unit filename="include/ImageMap.h" />
+		<Unit filename="include/ImagePng.h" />
+		<Unit filename="include/differentMap.h" />
+		<Unit filename="libpng12.dll" />
+		<Unit filename="libpng3.dll" />
+		<Unit filename="main.cpp" />
+		<Unit filename="png/convert_color_space.hpp" />
+		<Unit filename="png/png.hpp" />
+		<Unit filename="png/rgb_pixel.hpp" />
+		<Unit filename="png/rgba_pixel.hpp" />
+		<Unit filename="src/ImageMap.cpp" />
+		<Unit filename="src/ImagePng.cpp" />
+		<Unit filename="src/differentMap.cpp" />
+		<Unit filename="zlib1.dll" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
